@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灯光控制"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <ImageView 
+            android:src="@drawable/lightbultoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            />
+        
+        <ImageView 
+            android:src="@drawable/lightbultoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+        <Button 
+            android:id="@+id/lightbut1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@android:color/holo_blue_bright"
+            android:text="日光灯-1"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            />
+        <Button 
+            android:id="@+id/lightbut2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@android:color/holo_blue_bright"
+            android:text="日光灯-2"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/clientLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/connectLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clientTextView"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/StartConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="开始连接" />
+
+            <EditText
+                android:id="@+id/IPText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/StartConnect"
+                android:hint="请输入IP地址" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="灯光控制"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/RecvText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="信息：\n"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/kaideng1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1号灯开" />
+
+        <Button
+            android:id="@+id/kaideng2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2号灯开" />
+
+        <Button
+            android:id="@+id/kaideng3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3号灯开" />
+
+        <Button
+            android:id="@+id/kaideng4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4号灯开" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+    <Button
+        android:id="@+id/fengshan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通风设备" />
+
+        <Button
+            android:id="@+id/meiyong1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总电源" />
+        <Button
+            android:id="@+id/meiyong2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报警器" />
+        <Button
+            android:id="@+id/meiyong3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消防喷头" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="环境监测"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度：" />
+
+        <TextView
+            android:id="@+id/wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/wenduBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="湿度：" />
+
+        <TextView
+            android:id="@+id/shidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/shiduBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="齐齐哈尔大学通信与电子工程学院" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

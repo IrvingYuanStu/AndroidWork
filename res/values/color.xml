@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 定义颜色文件 -->
+    <color name="titleColor">#E96D5B</color><!-- 红色 -->
+    <color name="backgroundColor">#F8F8F8</color><!-- 灰色 -->
+    <color name="backgroundColor1">#E1E1E1</color>
+    <color name="wenshilan">#26A0DA</color>
+    
+</resources>
